@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/item_music_list"
+        android:layout_toLeftOf="@+id/more_select"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+    <View
+        android:id="@+id/v_playing"
+        android:layout_width="3dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="3dp"
+        android:background="@color/red"
+        android:contentDescription="@null"
+        android:visibility="invisible" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/music_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:text="TextView"/>
+
+            <TextView
+                android:id="@+id/music_artist"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:textColor="@color/music_artisit"
+                android:textSize="10sp"
+                android:text="TextView" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/grey">
+        <ImageView
+            android:id="@+id/radio_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/default_cover"/>
+        <View
+            android:layout_width="20dp"
+            android:layout_height="150dp"/>
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="20dp"/>
+           <TextView
+               android:id="@+id/radio_name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="20dp"/>
+           <TextView
+               android:id="@+id/radio_detital"
+               android:maxHeight="70dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+       </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/songlist_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

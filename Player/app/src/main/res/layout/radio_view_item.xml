@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="118dp"
+        android:layout_height="87dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        app:srcCompat="@drawable/default_cover" />
+
+    <ImageView
+        android:id="@+id/play_count"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/playcount_bg"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/play_count_text"
+        android:layout_toRightOf="@+id/play_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="playcount"
+        android:textSize="10sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/radio_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:maxWidth="120dp"
+        android:maxLines="2"
+        android:layout_below="@+id/imageView2"
+        android:text="标题"/>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editText"
+            android:layout_alignRight="@+id/search_music"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:hint="歌手名或歌名"
+            />
+        <ImageView
+            android:id="@+id/search_music"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/search"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/failsearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:text="失败"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/windowBackground">
+
+        <ListView
+            android:id="@+id/lv_search_music_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null" >
+
+        </ListView>
+
+        <include
+            android:id="@+id/ll_loading"
+            layout="@layout/include_loading"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/ll_load_fail"
+            layout="@layout/include_load_fail"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

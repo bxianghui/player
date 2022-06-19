@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/app_name">
+        <Preference
+            android:key="version"
+            android:summary="v 1.0"
+            android:title="当前版本" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="关于作者">
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="版权">
+        <Preference
+            android:summary="网易云音乐"
+            android:title="在线音乐" />
+    </PreferenceCategory>
+</PreferenceScreen>

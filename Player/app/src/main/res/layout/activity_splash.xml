@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Linearlayout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_splash">
+
+
+    <TextView
+        android:id="@+id/splash_vie_id"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_corner_splash"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="160dp"
+        android:text="跳过4s"
+        android:textSize="25sp"
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
