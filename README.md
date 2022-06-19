@@ -15,8 +15,8 @@ android音乐播放器
 9. ...
 
 ## 工具
-ide: android studio
-java： 1.8
+1. ide: android studio
+2. java： 1.8
 
 ## 演示
 演示视频展示App功能
